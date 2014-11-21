@@ -16,10 +16,12 @@ angular.module('myApp', [
         $routeProvider.otherwise({redirectTo: '/view1'});
     }])
 
-    .controller('View2Ctrl', [function () {
-
+    .controller('View1Ctrl', ['$scope', function ($scope) {
+        $scope.onClick = function () {
+            alert('Clicked!')
+        }
     }])
 
-    .controller('View1Ctrl', [function () {
+    .controller('View2Ctrl', [function () {
 
     }]);
